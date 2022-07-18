@@ -1,13 +1,157 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Allan&family=Anton&family=Antonio:wght@100;200;300;400;500&family=Fjalla+One&display=swap');
+
+:root {
+  --xl-font-size: 2.5rem;
+  --title-font-size: 2rem;
+  --sub-title-font-size: 1.2rem;
+  --font-size: 1rem;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media screen and (min-width: 600px) {
+  :root {
+    --xl-font-size: 3rem;
+    --title-font-size: 2.5rem;
+    --sub-title-font-size: 1.5rem;
+    --font-size: 1.25rem;
+  }
+}
+
+html {
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-transform: capitalize;
+  background-color: hsl(0, 0%, 99%);
+  color: hsl(0, 0%, 25%);
+  font-size: var(--font-size);
+  font-family: "Fjalla One", sans-serif;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+header h1 {
+  text-align: center;
+  font-size: var(--xl-font-size);
+  font-family: 'Allan', cursive;
+  color: hsl(240, 50%, 70%);
+  margin: 3rem 0 2rem;
+}
+
+.category-filter {
+  margin: 2rem 0 3rem;
+  display: grid;
+  place-content: center;
+  place-items: center;
+}
+
+.category-filter select {
+  text-transform: capitalize;
+  padding: .5rem 1rem;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+article.place {
+  padding: 1.5rem;
+  border-radius: 3px;
+  margin: 2.5rem 0;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  font-family: "Anton", sans-serif;
+  letter-spacing: 2px;
+  margin-bottom: 0.25rem;
+}
+
+.subtitle {
+  font-size: var(--sub-title-font-size);
+  color: hsl(240, 10%, 40%);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 100;
+  margin: 0 0 1rem;
+}
+
+.images {
+  display: grid;
+  row-gap: 1rem;
+  margin: 0 0 1rem;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 2px;
+  width: 100%;
+}
+
+.description {
+  font-size: 1rem;
+  margin-top: 2rem;
+  text-transform: none;
+}
+
+.details li {
+  margin: 0.8rem 0;
+}
+
+.details span {
+  color: hsl(0, 0%, 36%);
+  margin-right: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.tags span {
+  font-size: 1.2rem;
+}
+
+.tag {
+  font-size: .95rem;
+  background-color: hsl(240, 35%, 85%, 0.6);
+  border-radius: 3px;
+  padding: 0.2rem 0.4rem;
+  margin: .2rem .2rem;
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    background-color: hsl(240, 100%, 99%);
+  }
+
+  main {
+    display: grid;
+    place-content: center;
+    place-items: center;
+    row-gap: 2rem;
+  }
+
+  article.place {
+    margin: 0 0;
+    max-width: 775px;
+  }
 }
