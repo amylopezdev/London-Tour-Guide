@@ -283,7 +283,7 @@ const data = [
     tags: [],
     budget: 0,
     website: "https://www.kingscross.co.uk/event/screen-on-the-canal",
-    address: "",
+    address: "Screen on the Canal Granary Square, London",
     images: ["./images/screencanal1.jpeg"],
   },
   {
