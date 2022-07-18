@@ -6,13 +6,13 @@ export const App = () => {
   const [categories, setCategories] = useState([]);
 
   const allCategories = [
-    "all",
+    "All",
     ...new Set(data.map((place) => place.category))
   ];
 
   useEffect(() => {
     setCategories(allCategories);
-    setSelectedCategory("all")
+    setSelectedCategory("All")
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -38,7 +38,7 @@ export const App = () => {
       <main>
         {data
           .filter((place) => {
-            if (selectedCategory === "all") return true;
+            if (selectedCategory === "All") return true;
             return place.category === selectedCategory;
           })
           .map((place) => {
