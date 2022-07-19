@@ -12,6 +12,7 @@ const data = [
     address: "Tate Modern, Bankside, London SE1 9TG",
     images: [
       "./images/tatemodern1.jpeg",
+      "./images/tatemodern2.jpeg",
     ],
   },
   {
@@ -109,8 +110,6 @@ const data = [
     address: "Barbican Centre, Silk Street, London, EC2Y 8DS",
     images: [
       "./images/barbican1.jpeg",
-      "./images/barbican2.jpeg",
-      "./images/barbican3.jpeg",
     ],
   },
   {
@@ -125,7 +124,6 @@ const data = [
     address: "54-56 Camden Lock Pl, London NW1 8AF",
     images: [
       "./images/camden1.jpeg",
-      "./images/camden2.jpeg"
     ],
   },
   {
@@ -206,6 +204,7 @@ const data = [
     address: "London Eye",
     images: [
       "./images/londoneye1.jpeg",
+      "./images/londoneye2.jpeg",
     ],
   },
   {
@@ -254,7 +253,7 @@ const data = [
     subtitle: "park",
     category: "Nature",
     description: "",
-    tags: ["nature", "garden"],
+    tags: ["nature", "garden", "reindeer"],
     budget: 0,
     website:
       "https://www.royalparks.org.uk/parks/richmond-park?gclid=EAIaIQobChMI0deXn5Sy-AIVDevtCh2rEQJJEAAYASAAEgKRJ_D_BwE",
